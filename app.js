@@ -16,6 +16,8 @@ function fetchData(countryInput) {
 function displayInfo(data) {
     document.getElementById('country').innerText = data.name;
     document.getElementById('country-flag').setAttribute('src', data.flag);
-    document.getElementById('capital').innerText = data.capital;
-    document.getElementById('population').innerText = data.population;
+    document.getElementById('capital').innerText = "Capital : " + data.capital;
+    document.getElementById('aria').innerText = "Aria : " + data.area;
+    document.getElementById('population').innerText = "Population : " + data.population;
+    document.getElementById('country-name').value = "";
 }
